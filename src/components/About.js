@@ -3,16 +3,16 @@ import './About.css';
 import Image from 'react-bootstrap/Image';
 import alpine from '../resources/images/alpine.jpg';
 import engage from '../resources/images/engage.jpg';
-import amazon from '../resources/images/amazon.JPG';
-import fallCanyon from '../resources/images/fallCanyon.JPG';
-import fallFall from '../resources/images/fallFall.JPG';
-import fallHugs from '../resources/images/fallHugs.JPG';
-import fallKisses from '../resources/images/fallKisses.JPG';
-import gotham from '../resources/images/gotham.PNG';
+import amazon from '../resources/images/amazon.jpg';
+import fallCanyon from '../resources/images/fallCanyon.jpg';
+import fallFall from '../resources/images/fallFall.jpg';
+import fallHugs from '../resources/images/fallHugs.jpg';
+import fallKisses from '../resources/images/fallKisses.jpg';
+import gotham from '../resources/images/gotham.jpg';
 import initials from '../resources/images/initials.jpg';
-import nightmareB4Xmas from '../resources/images/nightmareB4Xmas.JPG';
-import porcupine from '../resources/images/porcupine.JPG';
-import portland from '../resources/images/portland.JPG';
+import nightmareB4Xmas from '../resources/images/nightmareB4Xmas.jpg';
+import porcupine from '../resources/images/porcupine.jpg';
+import portland from '../resources/images/portland.jpg';
 import waterfall from '../resources/images/waterfall.jpg';
 
 class About extends Component {
