@@ -1,0 +1,20 @@
+body {
+    font-family: 'aAbstractGroovy';
+}
+
+.regLink1 {
+    padding-top: 25px;
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-bottom: 10px;
+}
+
+.regLink2 {
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-bottom: 5px;
+}
