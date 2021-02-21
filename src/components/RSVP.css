@@ -1,0 +1,26 @@
+body {
+    font-family: 'aAbstractGroovy';
+}
+.rsvpBody {
+    text-align: center;
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.subHeading2 {
+    color: rgb(255, 241, 116);
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.buttonContainer {
+    text-align: center;
+    margin: auto;
+}
+.yesButton {
+    position: relative;
+    margin-right: 2%;
+}
+.noButton {
+    position: relative;
+}
