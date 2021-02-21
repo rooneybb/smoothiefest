@@ -1,0 +1,28 @@
+body {
+    background-color: coral;
+    font-family: 'aAbstractGroovy';
+}
+.aboutHeader {
+    display: table;
+    color: rgb(222, 107, 245);
+    text-align: left;
+    font-weight: 1000;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.blurb1 {
+    padding-top: 25px;
+    text-align: left;
+    margin: auto;
+    font-family: 'FashionStamp';
+    font-weight: 500;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.imageGeneral {
+    padding-top: 25px;
+    width: 25%;
+    height: 25%;
+}

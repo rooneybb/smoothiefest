@@ -1,13 +1,50 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: coral;
+    margin: 0;
+    font-family: 'FashionStamp', 'aAbstractGroovy', 'Royalacid_o', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.routeHeader {
+    padding-top: 25px;
+    text-align: center;
+    margin: auto;
+}
+.subHeader1 {
+    display: table;
+    color: rgb(222, 107, 245);
+    text-align: center;
+    margin: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.stillLife {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    padding-top: 25px;
+}
+
+@font-face {
+    font-family: 'aAbstractGroovy';
+    src: local('aAbstractGroovy'), url(./resources/fonts/aAbstractGroovy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Royalacid_o';
+    src: local('Royalacid_o'), url(./resources/fonts/Royalacid_o.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'FashionStamp';
+    src: local('FashionStamp'), url(./resources/fonts/FashionStamp.ttf) format('truetype');
 }
