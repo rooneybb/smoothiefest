@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 import Home from './components/Home';
 import About from './components/About';
+import Photos from './components/Photos';
 import Contact from './components/Contact';
 import Registry from './components/Registry';
 import RSVP from './components/RSVP';
@@ -18,6 +19,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/About" component={About} />
+                <Route path="/Photos" component={Photos} />
                 <Route path="/Contact" component={Contact} />
                 <Route path="/Registry" component={Registry} />
                 <Route path="/RSVP" component={RSVP} />
