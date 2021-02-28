@@ -28,9 +28,8 @@ class Attendees extends Component {
                     'content-type': 'application/json'
                 }
             });
-            console.log(JSON.stringify(res));
             this.setState({ guests: res.data });
-            console.log(JSON.stringify(this.state.guests[0]));
+            console.log(`Guests: ${JSON.stringify(this.state.guests.toString())}`);
             return res.data;
         } catch (e) {
             console.error(`Error calling db: ${e.message}`);
