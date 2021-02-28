@@ -11,6 +11,7 @@ import Photos from './components/Photos';
 import Contact from './components/Contact';
 import Registry from './components/Registry';
 import RSVP from './components/RSVP';
+import Attendees from './components/Attendees';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
                 <Route path="/Contact" component={Contact} />
                 <Route path="/Registry" component={Registry} />
                 <Route path="/RSVP" component={RSVP} />
+                <Route path="/Attendees" component={Attendees} />
             </Switch>
         </Router>
     </React.StrictMode>,
