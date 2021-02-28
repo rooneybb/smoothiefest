@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import './RSVP.css';
 import { Image, InputGroup, FormControl, Dropdown, DropdownButton } from 'react-bootstrap';
+import axios from 'axios';
 import outdoorWedding from '../resources/images/outdoorWedding.jpg';
 
-<<<<<<< HEAD
-=======
 const axiosInstance = axios.create();
 
 const submit = async () => {
@@ -39,7 +38,6 @@ const submit = async () => {
     }
 };
 
->>>>>>> parent of ba4c906... rsvp and attendees working with backend
 class RSVP extends Component {
     render() {
         return (
@@ -82,19 +80,11 @@ class RSVP extends Component {
                 </DropdownButton>
                 <h2 className="subHeading2">Take me to...?</h2>
                 <div className="buttonContainer">
-<<<<<<< HEAD
-                    <Button className="yesButton" variant="success">
-                        Funky Town
-                    </Button>
-                    <Button className="noButton" variant="danger">
-                        Bummer City
-=======
                     <Button className="yesButton" variant="success" onClick={() => submit()}>
                         Funky Town - Yes
                     </Button>
-                    <Button className="noButton" variant="danger">
+                    <Button className="noButton" varianba4c906t="danger">
                         Bummer City - No
->>>>>>> parent of ba4c906... rsvp and attendees working with backend
                     </Button>{' '}
                 </div>
                 <Image className="stillLife" src={outdoorWedding} roundedCircle />
