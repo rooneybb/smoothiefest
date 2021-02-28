@@ -13,9 +13,6 @@ const header = () => (
                 <LinkContainer to="/About">
                     <Nav.Link>Love Story</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/Photos">
-                    <Nav.Link>Photos</Nav.Link>
-                </LinkContainer>
                 <LinkContainer to="/Registry">
                     <Nav.Link>Registry</Nav.Link>
                 </LinkContainer>

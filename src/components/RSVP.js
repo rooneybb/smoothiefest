@@ -83,7 +83,7 @@ class RSVP extends Component {
                     <Button className="yesButton" variant="success" onClick={() => submit()}>
                         Funky Town - Yes
                     </Button>
-                    <Button className="noButton" variant="danger">
+                    <Button className="noButton" varianba4c906t="danger">
                         Bummer City - No
                     </Button>{' '}
                 </div>
