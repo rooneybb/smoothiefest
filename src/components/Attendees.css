@@ -1,0 +1,9 @@
+body {
+    font-family: 'aAbstractGroovy';
+}
+.attendeesBody {
+    text-align: center;
+    margin: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+}
