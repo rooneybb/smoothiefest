@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import './About.css';
 import Image from 'react-bootstrap/Image';
-import stillLife3 from '../resources/images/stillLife3.jpg';
+import alpine from '../resources/images/alpine.jpg';
+import engage from '../resources/images/engage.jpg';
+import amazon from '../resources/images/amazon.jpg';
+import fallCanyon from '../resources/images/fallCanyon.jpg';
+import fallFall from '../resources/images/fallFall.jpg';
+import fallHugs from '../resources/images/fallHugs.jpg';
+import fallKisses from '../resources/images/fallKisses.jpg';
+import gotham from '../resources/images/gotham.jpg';
+import initials from '../resources/images/initials.jpg';
+import nightmareB4Xmas from '../resources/images/nightmareB4Xmas.jpg';
+import porcupine from '../resources/images/porcupine.jpg';
+import portland from '../resources/images/portland.jpg';
+import waterfall from '../resources/images/waterfall.jpg';
 
 class About extends Component {
     render() {
@@ -36,7 +48,19 @@ class About extends Component {
                     in spite of beautiful surprises, was merciless that day. We have been
                     impassioned to tie the knot ever since!
                 </h2>
-                <Image className="stillLife" src={stillLife3} roundedCircle />
+                <Image className="imageGeneral" src={portland} rounded />
+                <Image className="imageGeneral" src={nightmareB4Xmas} rounded />
+                <Image className="imageGeneral" src={amazon} rounded />
+                <Image className="imageGeneral" src={gotham} rounded />
+                <Image className="imageGeneral" src={alpine} rounded />
+                <Image className="imageGeneral" src={waterfall} rounded />
+                <Image className="imageGeneral" src={initials} rounded />
+                <Image className="imageGeneral" src={engage} rounded />
+                <Image className="imageGeneral" src={porcupine} rounded />
+                <Image className="imageGeneral" src={fallCanyon} rounded />
+                <Image className="imageGeneral" src={fallFall} rounded />
+                <Image className="imageGeneral" src={fallHugs} rounded />
+                <Image className="imageGeneral" src={fallKisses} rounded />
             </div>
         );
     }

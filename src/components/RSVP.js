@@ -2,41 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import './RSVP.css';
 import { Image, InputGroup, FormControl, Dropdown, DropdownButton } from 'react-bootstrap';
-import axios from 'axios';
 import outdoorWedding from '../resources/images/outdoorWedding.jpg';
-
-const axiosInstance = axios.create();
-
-const submit = async () => {
-    const data2 = {
-        firstName: 'bb',
-        lastName: 'yo',
-        partySize: 2
-    };
-
-    // const data2 = 'test';
-    // const options = {
-    //     method: 'post',
-    //     url: 'https://webhook.site/9818053c-2264-425d-958f-896927431fbc',
-    //     headers: { 'x-api-key': 'test123', 'content-type': 'plain/text' },
-    //     data: JSON.stringify(data2)
-    // };
-
-    try {
-        return await axiosInstance({
-            method: 'post',
-            url: 'https://7pd3mzzqxk.execute-api.us-east-1.amazonaws.com/prod/guests',
-            headers: {
-                'x-api-key': 'test123',
-                'content-type': 'application/json'
-            },
-            data: JSON.stringify(data2)
-        });
-    } catch (e) {
-        console.error(`Error calling db: ${e.message}`);
-        return e;
-    }
-};
 
 class RSVP extends Component {
     render() {
@@ -80,11 +46,11 @@ class RSVP extends Component {
                 </DropdownButton>
                 <h2 className="subHeading2">Take me to...?</h2>
                 <div className="buttonContainer">
-                    <Button className="yesButton" variant="success" onClick={() => submit()}>
-                        Funky Town - Yes
+                    <Button className="yesButton" variant="success">
+                        Funky Town
                     </Button>
                     <Button className="noButton" variant="danger">
-                        Bummer City - No
+                        Bummer City
                     </Button>{' '}
                 </div>
                 <Image className="stillLife" src={outdoorWedding} roundedCircle />
