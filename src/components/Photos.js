@@ -32,153 +32,161 @@ class Photos extends Component {
             <div>
                 <h2 className="routeHeader">Photos</h2>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Encino Man + Lola Bunny">
-                        <Image className="image1" src={encinoHalloweenoCropped} rounded />
+                <div className="allPicsContainer">
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Encino Man + Lola Bunny">
+                            <Image className="image1" src={encinoHalloweenoCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Faces of Wrigleyville">
-                        <Image className="image1" src={weirdFacesCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Faces of Wrigleyville">
+                            <Image className="image1" src={weirdFacesCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Frolfin' the North Woods">
-                        <Image className="image1" src={frisbeeCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Frolfin' the North Woods">
+                            <Image className="image1" src={frisbeeCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Ye Olde Renn Faire">
-                        <Image className="image1" src={renFaireCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Ye Olde Renn Faire">
+                            <Image className="image1" src={renFaireCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="The Leaning Tower of Cheezaaa">
-                        <Image className="image1" src={GoofyHalloweenCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="The Leaning Tower of Cheezaaa">
+                            <Image className="image1" src={GoofyHalloweenCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Punta Cana - Schedin Wedding">
-                        <Image className="image1" src={dominicanCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Punta Cana - Schedin Wedding">
+                            <Image className="image1" src={dominicanCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Goodbye Mystic Celt">
-                        <Image className="image1" src={amazonCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Goodbye Mystic Celt">
+                            <Image className="image1" src={amazonCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Nightmare Before Xmas Orchestra">
-                        <Image className="image1" src={nightmareB4XmasCropped} rounded />
+                    <div className="pictureContainer">
+                        <div
+                            className="polaroid"
+                            polaroid-caption="Nightmare Before Xmas Orchestra"
+                        >
+                            <Image className="image1" src={nightmareB4XmasCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="After Sundaes in Ghiradelli Square">
-                        <Image className="image1" src={ghiradelliCropped} rounded />
+                    <div className="pictureContainer">
+                        <div
+                            className="polaroid"
+                            polaroid-caption="After Sundaes in Ghiradelli Square"
+                        >
+                            <Image className="image1" src={ghiradelliCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Allagash Brewing, Portland, ME">
-                        <Image className="image1" src={portlandCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Allagash Brewing, Portland, ME">
+                            <Image className="image1" src={portlandCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Zoinks Scoob">
-                        <Image className="image1" src={scoobOWeenCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Zoinks Scoob">
+                            <Image className="image1" src={scoobOWeenCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Phish at Alpine Valley">
-                        <Image className="image1" src={alpineCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Phish at Alpine Valley">
+                            <Image className="image1" src={alpineCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Chicago - Miller Wedding">
-                        <Image className="image1" src={gothamCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Chicago - Miller Wedding">
+                            <Image className="image1" src={gothamCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div
-                        className="polaroid"
-                        polaroid-caption="Elaine and Kramer (Contest winners!)"
-                    >
-                        <Image className="image1" src={SeinfeldHalloweenCropped} rounded />
+                    <div className="pictureContainer">
+                        <div
+                            className="polaroid"
+                            polaroid-caption="Elaine and Kramer (Contest winners!)"
+                        >
+                            <Image className="image1" src={SeinfeldHalloweenCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Acadia National Park">
-                        <Image className="image1" src={acadiaCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Acadia National Park">
+                            <Image className="image1" src={acadiaCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Cloud Forest Costa Rica">
-                        <Image className="image1" src={cloudBridgeCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Cloud Forest Costa Rica">
+                            <Image className="image1" src={cloudBridgeCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Tastee freez">
-                        <Image className="image1" src={waterfallCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Tastee freez">
+                            <Image className="image1" src={waterfallCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="She said yes!!!">
-                        <Image className="image1" src={engageCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="She said yes!!!">
+                            <Image className="image1" src={engageCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Marking our territory">
-                        <Image className="image1" src={initialsCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Marking our territory">
+                            <Image className="image1" src={initialsCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div
-                        className="polaroid"
-                        polaroid-caption="Roughin' it in the Porcupine Mountains"
-                    >
-                        <Image className="image1" src={porcupineCropped} rounded />
+                    <div className="pictureContainer">
+                        <div
+                            className="polaroid"
+                            polaroid-caption="Roughin' it in the Porcupine Mountains"
+                        >
+                            <Image className="image1" src={porcupineCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Proposal Canyon in Fall">
-                        <Image className="image1" src={fallCanyonCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Proposal Canyon in Fall">
+                            <Image className="image1" src={fallCanyonCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Proposal Waterfall in Autumn">
-                        <Image className="image1" src={fallFallCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Proposal Waterfall in Autumn">
+                            <Image className="image1" src={fallFallCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Proposal Revisited">
-                        <Image className="image1" src={fallHugsCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Proposal Revisited">
+                            <Image className="image1" src={fallHugsCropped} rounded />
+                        </div>
                     </div>
-                </div>
 
-                <div className="pictureContainer">
-                    <div className="polaroid" polaroid-caption="Young Lovahs in Autumn">
-                        <Image className="image1" src={fallKissesCropped} rounded />
+                    <div className="pictureContainer">
+                        <div className="polaroid" polaroid-caption="Young Lovahs in Autumn">
+                            <Image className="image1" src={fallKissesCropped} rounded />
+                        </div>
                     </div>
                 </div>
             </div>
