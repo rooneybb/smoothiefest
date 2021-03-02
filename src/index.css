@@ -50,6 +50,7 @@ code {
 }
 
 @font-face {
-    font-family: 'TNanti-Demo';
-    src: local('TNanti-Demo'), url(./resources/fonts/TNanti-Demo.otf) format('opentype');
+    font-family: 'alphabetizedCassetteTapes';
+    src: local('alphabetizedCassetteTapes'),
+        url(./resources/fonts/alphabetizedCassetteTapes.ttf) format('truetype');
 }
