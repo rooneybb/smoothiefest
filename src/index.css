@@ -48,3 +48,8 @@ code {
     font-family: 'FashionStamp';
     src: local('FashionStamp'), url(./resources/fonts/FashionStamp.ttf) format('truetype');
 }
+
+@font-face {
+    font-family: 'TNanti-Demo';
+    src: local('TNanti-Demo'), url(./resources/fonts/TNanti-Demo.otf) format('OpenType');
+}
