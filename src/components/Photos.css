@@ -2,8 +2,33 @@ body {
     background-color: coral;
     font-family: 'aAbstractGroovy';
 }
-.imageGeneral {
-    padding-top: 25px;
-    width: 25%;
-    height: 25%;
+.pictureContainer {
+    display: inline-table;
+    position: relative;
+    height: 300px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.polaroid {
+    position: relative;
+    border: 1px solid darkgrey;
+    background-color: white;
+    padding: 15px 15px 100px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+}
+.polaroid:after {
+    content: attr(polaroid-caption);
+    font-weight: 1000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 20px);
+    padding: 25;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'TNanti-Demo';
+    padding-bottom: 15px;
+    color: black;
 }
