@@ -19,9 +19,6 @@ const header = () => (
                 <LinkContainer to="/Registry">
                     <Nav.Link>Registry</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/Contact">
-                    <Nav.Link>Contact</Nav.Link>
-                </LinkContainer>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

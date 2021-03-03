@@ -4,23 +4,34 @@ body {
 .rsvpBody {
     text-align: center;
     margin: auto;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.subHeader1 {
+    color: rgb(255, 241, 116);
+    text-align: center;
+    font-size: 150%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .subHeading2 {
     color: rgb(255, 241, 116);
+    text-align: center;
     font-size: 25px;
-    padding-top: 25px;
+    margin: auto;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 .buttonContainer {
     text-align: center;
-    margin: auto;
+    padding-bottom: 10px;
 }
 .yesButton {
+    text-align: center;
     position: relative;
-    margin-right: 2%;
 }
 .noButton {
+    text-align: center;
     position: relative;
 }
