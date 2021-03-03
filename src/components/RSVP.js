@@ -1,56 +1,61 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button';
 import './RSVP.css';
-import { Image, InputGroup, FormControl, Dropdown, DropdownButton } from 'react-bootstrap';
+import {
+    Image,
+    InputGroup,
+    FormControl,
+    Dropdown,
+    DropdownButton,
+    Button,
+    Alert
+} from 'react-bootstrap';
 import axios from 'axios';
 import outdoorWedding from '../resources/images/outdoorWedding.jpg';
 
 const axiosInstance = axios.create();
 
-// const handleSubmit = async (event) => {
-//     const data2 = {
-//         firstName: 'bb',
-//         lastName: 'yo',
-//         partySize: 2
-//     };
-
-//     console.log(JSON.stringify(event));
-
-//     // const data2 = 'test';
-//     // const options = {
-//     //     method: 'post',
-//     //     url: 'https://webhook.site/9818053c-2264-425d-958f-896927431fbc',
-//     //     headers: { 'x-api-key': 'test123', 'content-type': 'plain/text' },
-//     //     data: JSON.stringify(data2)
-//     // };
-
-//     try {
-//         return await axiosInstance({
-//             method: 'post',
-//             url: 'https://7pd3mzzqxk.execute-api.us-east-1.amazonaws.com/prod/guests',
-//             headers: {
-//                 'x-api-key': 'test123',
-//                 'content-type': 'application/json'
-//             },
-//             data: JSON.stringify(data2)
-//         });
-//     } catch (e) {
-//         console.error(`Error calling db: ${e.message}`);
-//         return e;
-//     }
-// };
-
 class RSVP extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            id: 0,
+            id: '',
+            firstName: '',
+            lastName: '',
+            partySize: '',
+            response: '',
+            show: false,
+            warning: false,
+            successMessage: '',
+            warningMessage: ''
+        };
+    }
+
+    resetUserState = async () => {
+        console.log(`Resetting State: ${JSON.stringify(this.state)}`);
+        this.setState({
+            id: '',
             firstName: '',
             lastName: '',
             partySize: '',
             response: ''
-        };
-    }
+        });
+        console.log(`State Reset: ${JSON.stringify(this.state)}`);
+    };
+
+    validateData = () => {
+        if (this.state.firstName === '') {
+            throw Error('Need to fill out first name!');
+        }
+        if (this.state.lastName === '') {
+            throw Error('Need to fill out last name!');
+        }
+        if (this.state.partySize === '') {
+            throw Error('Need to fill out party size!');
+        }
+        if (this.state.response === '') {
+            throw Error('Issue generating response!');
+        }
+    };
 
     updateDb = async () => {
         const firstName = this.state.firstName.trim().toLowerCase();
@@ -83,10 +88,34 @@ class RSVP extends Component {
     };
 
     handleSubmit = async (event) => {
-        await this.setState({ response: event.target.value });
-        console.log(`Response ${this.state.response}`);
-        const res = await this.updateDb();
-        return res;
+        try {
+            await this.setState({ response: event.target.value });
+            console.log(`Response ${this.state.response}`);
+            this.validateData();
+            const res = await this.updateDb();
+            console.log(`Res: ${JSON.stringify(res)}`);
+            if (res.status === 200) {
+                await this.setShowTrue();
+                await this.setSuccessMessage(
+                    `${this.state.firstName} ${this.state.lastName} RSVP ${this.state.response} for party of ${this.state.partySize} successfully submitted`
+                );
+
+                await this.resetUserState();
+                // return this.showAlert();
+            }
+
+            // await this.setShow(false);
+            return res;
+
+            // return this.showAlert();
+        } catch (err) {
+            console.log(err.message);
+            // await this.setShowTrue();
+            await this.setWarningTrue();
+            await this.setWarningMessage(err.message);
+            //  return this.showAlert();
+            return err;
+        }
     };
 
     handleFirstNameChange = async (event) => {
@@ -104,11 +133,35 @@ class RSVP extends Component {
         console.log(`Party Size: ${this.state.partySize}`);
     };
 
+    setShowTrue = async () => this.setState({ show: true });
+
+    setShowFalse = async () => this.setState({ show: false });
+
+    setWarningTrue = async () => this.setState({ warning: true });
+
+    setWarningFalse = async () => this.setState({ warning: false });
+
+    setWarningMessage = async (msg) => this.setState({ warningMessage: msg });
+
+    setSuccessMessage = async (msg) => this.setState({ successMessage: msg });
+
     render() {
         return (
             <div className="rsvpBody">
                 <h2 className="routeHeader">RSVP</h2>
-                <br></br>
+                <div className="popUp">
+                    {this.state.show && (
+                        <Alert variant="success" onClose={this.setShowFalse} dismissible>
+                            {this.state.successMessage}
+                        </Alert>
+                    )}
+                    {this.state.warning && (
+                        <Alert variant="danger" onClose={this.setWarningFalse} dismissible>
+                            {this.state.warningMessage}
+                        </Alert>
+                    )}
+                </div>
+
                 <h2 className="subHeader1">Will thou quench their thirst at Smoothiefest?</h2>
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
@@ -121,6 +174,11 @@ class RSVP extends Component {
                         value={this.state.firstName}
                         onChange={this.handleFirstNameChange}
                     />
+                </InputGroup>
+                <InputGroup className="mb-3">
+                    <InputGroup.Prepend>
+                        <InputGroup.Text>Enter Name</InputGroup.Text>
+                    </InputGroup.Prepend>
                     <FormControl
                         type="text"
                         placeholder="Last name..."
@@ -129,7 +187,6 @@ class RSVP extends Component {
                         onChange={this.handleLastNameChange}
                     />
                 </InputGroup>
-
                 <InputGroup className="mb-3">
                     <InputGroup.Prepend>
                         <InputGroup.Text>Party Size</InputGroup.Text>
@@ -153,7 +210,6 @@ class RSVP extends Component {
                         <Dropdown.Item eventKey="9">9</Dropdown.Item>
                     </DropdownButton>
                 </InputGroup>
-
                 <h2 className="subHeading2">Take me to...?</h2>
                 <div className="buttonContainer">
                     <Button
@@ -164,6 +220,8 @@ class RSVP extends Component {
                     >
                         Funky Town - Yes
                     </Button>
+                </div>
+                <div className="buttonContainer">
                     <Button
                         className="noButton"
                         variant="danger"
@@ -171,8 +229,9 @@ class RSVP extends Component {
                         onClick={this.handleSubmit}
                     >
                         Bummer City - No
-                    </Button>{' '}
+                    </Button>
                 </div>
+
                 <Image className="stillLife" src={outdoorWedding} roundedCircle />
             </div>
         );

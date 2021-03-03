@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.css';
 import Image from 'react-bootstrap/Image';
-import stillLife3 from '../resources/images/stillLife3.jpg';
+import groovy from '../resources/images/groovy.jpg';
 
 class About extends Component {
     render() {
@@ -14,8 +14,8 @@ class About extends Component {
                     Our romantic fairy tale began virtually, in the depths of the digital frontier.
                     Katrina thought she was connecting with a nice young chap by the name of Chip
                     Douglas. Brendan thought he was meeting up with a professional cat trainer.
-                    Thankfully it turns out there was no cable-installing stalker nor feline
-                    ettiquette enforcer.
+                    Thankfully it turns out there was no cable-installing psychopath nor was there a
+                    feline ettiquette enforcer.
                 </h2>
                 <h2 className="blurb1">
                     Our first date was at Mystic Celt, an Irish Pub on Southport Ave in Chicago and
@@ -36,7 +36,7 @@ class About extends Component {
                     in spite of beautiful surprises, was merciless that day. We have been
                     impassioned to tie the knot ever since!
                 </h2>
-                <Image className="stillLife" src={stillLife3} roundedCircle />
+                <Image className="stillLife" src={groovy} roundedCircle />
             </div>
         );
     }
