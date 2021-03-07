@@ -7,36 +7,31 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h2 className="routeHeader">Love Story</h2>
-                <h2 className="aboutHeader">The Story of Katrina and Brendan</h2>
+                <Image className="headerPic" src={groovy} roundedCircle />
 
                 <h2 className="blurb1">
-                    Our romantic fairy tale began virtually, in the depths of the digital frontier.
-                    Katrina thought she was connecting with a nice young chap by the name of Chip
-                    Douglas. Brendan thought he was meeting up with a professional cat trainer.
-                    Thankfully it turns out there was no cable-installing psychopath nor was there a
-                    feline ettiquette enforcer.
+                    Our love story began in the digital frontier. Katrina thought she was making a
+                    connection with a witty guy named Chip Douglas. She soon came to find out that
+                    Brendan’s online dating alias was a character from ‘The Cable Guy’ played by Jim
+                    Carrey, who ironically was one of Katrina’s favorite comedic actors and
+                    childhood idols. It was meant to be!
                 </h2>
                 <h2 className="blurb1">
-                    Our first date was at Mystic Celt, an Irish Pub on Southport Ave in Chicago and
-                    magic quickly blossomed. Almost immediately it was apparent we had a lot in
-                    common. One of the more interesting things we uncovered was that we had grown up
-                    just minutes apart from each other. Our common interests led us to experience
-                    many great times together over the years. Some of our favorite activities have
-                    come to include hiking, going to concerts, and hitting the open road. Through
-                    these moments together we have evolved into kindered souls!
+                    On our first date at Mystic Celt, an Irish pub on Southport Avenue in Chicago,
+                    magic quickly blossomed. Finding out that we grew up only minutes apart from
+                    each other in the suburbs was just the beginning of our common interests. Over
+                    the years we’ve evolved into kindred souls, sharing in our favorite activities,
+                    such as hiking, going to concerts, exploring the Renaissance Faire and taking
+                    road trips all over the U.S.
                 </h2>
                 <h2 className="blurb1">
-                    These magical moments would eventually lead us on a winter&#39;s hike in
-                    December of 2019 at Starved Rock State Park. Brendan led Katrina behind a frozen
-                    waterfall where he had planned for them to nibble on some PB&#38;J&#39;s he had
-                    in his backpack. However, Brendan did not reach for a sandwich that day. Rather,
-                    a shiny ring appeared, one to symbolize two young lovers and their commitment to
-                    one another. Katrina was literally swept off of her feet as the icy ground, even
-                    in spite of beautiful surprises, was merciless that day. We have been
-                    impassioned to tie the knot ever since!
+                    On December 20th 2019 Brendan took Katrina on a romantic winter hike at Starved
+                    Rock State Park. He led her behind a frozen waterfall and got down on one
+                    knee...seemingly to get a PBJ out of his backpack. He actually reached for a
+                    diamond ring and Katrina was literally swept off her feet, slipping on the icy
+                    ground below. From that very moment, we have been so excited to tie the knot and
+                    celebrate our love!
                 </h2>
-                <Image className="stillLife" src={groovy} roundedCircle />
             </div>
         );
     }
