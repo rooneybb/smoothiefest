@@ -7,8 +7,9 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h2 className="smoothieFestHeader">09-18-2021</h2>
+                <h2 className="smoothieFestHeader">The future Mr. and Mrs. Rooney!</h2>
                 <Image className="mainPic" src={smoothieHome} rounded />
+                <h2 className="smoothieFestHeader">September 18th 2021</h2>
             </div>
         );
     }
