@@ -16,8 +16,14 @@ const header = () => (
                 <LinkContainer to="/Photos">
                     <Nav.Link>Photos</Nav.Link>
                 </LinkContainer>
-                <LinkContainer to="/Registry">
-                    <Nav.Link>Registry</Nav.Link>
+                <LinkContainer to="/WeddingPhotos">
+                    <Nav.Link>Wedding Photos</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/HoneymoonPhotos">
+                    <Nav.Link>Honeymoon Photos</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/WeddingVideo">
+                    <Nav.Link>Wedding Video</Nav.Link>
                 </LinkContainer>
             </Nav>
         </Navbar.Collapse>
