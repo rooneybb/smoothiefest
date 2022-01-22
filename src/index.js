@@ -11,6 +11,9 @@ import Photos from './components/Photos';
 import Registry from './components/Registry';
 import RSVP from './components/RSVP';
 import Attendees from './components/Attendees';
+import WeddingPhotos from './components/WeddingPhotos';
+import HoneymoonPhotos from './components/HoneymoonPhotos';
+import WeddingVideo from './components/WeddingVideo';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -23,6 +26,9 @@ ReactDOM.render(
                 <Route path="/Registry" component={Registry} />
                 <Route path="/RSVP" component={RSVP} />
                 <Route path="/Attendees" component={Attendees} />
+                <Route path="/WeddingPhotos" component={WeddingPhotos} />
+                <Route path="/HoneymoonPhotos" component={HoneymoonPhotos} />
+                <Route path="/WeddingVideo" component={WeddingVideo} />
             </Switch>
         </Router>
     </React.StrictMode>,
