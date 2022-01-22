@@ -30,7 +30,7 @@ class Photos extends Component {
     render() {
         return (
             <div>
-                <h2 className="routeHeader">Puppy Love Photos</h2>
+                <h2 className="smoothieFestHeader">Oldies</h2>
 
                 <div className="allPicsContainer">
                     <div className="pictureContainer">
