@@ -1,0 +1,30 @@
+body {
+    font-family: 'aAbstractGroovy';
+}
+.routeHeader {
+    font-weight: 700;
+}
+.smoothieFestHeader {
+    padding-top: 25px;
+    display: table;
+    font-size: 50px;
+    color: rgb(222, 107, 245);
+    text-align: center;
+    margin: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.weddingVideoWrapper {
+    padding-top: 25px;
+    display: table;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+.weddingVideo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1280px;
+    height: 720px;
+}
